@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Free Hauwei Unlocker/ Decoder V3.3</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="description" content="">
+<meta name="author" content="Free Hauwei Unlocker/ Decoder V3.3">
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+
+	
+
+    <!--     Fonts and icons     -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    
+
+    
+
+<style type="text/css">
+    button{
+        margin-top: 5px;
+    }
+    a{
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body class="section-dark">
+    
+    <div class="wrapper">
+        
+      
+			
+            
+			<div class=" section-dark" style="height: 100%">
+				<div class="container">
+					<div class="row">
+                       
+						<div class="col-md-8 ml-auto mr-auto text-center" >
+                            <h3>Free Huawei Unlocker/ Decoder V3.3 (Support V1, V2, V3(V201))</h3>
+                            <button class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="IMEI" data-content="International Mobile Equipment Identity">What Is An IMEI</button><br>
+                            <h5>IMEI (15 digits)</h5>
+							<form method="POST" action="calc.php" id="imei">
+                            <input type="text" name="imei" class="input form-control" placeholder="Type Your IMEI Here" minlength="15" pattern= "[0-9]{15,}" required="" title="15 digits required" maxlength="15"> 
+                            <button class="btn btn-outline-info">Calculate Unlock Code</button>
+                            
+                            </form>
+                            <h3 id="loading" style="color:white;"></h3>
+                            <div id="ajax-imei" style="color:white;"></div>
+                            <hr>
+                            <div style="color:white;"> Kindly Donate If You Find It Useful. Thank You :) <br> 
+                                <label>PayPal: <strong class="btn-outline-danger">damianagboash@gmail.com</strong> </label><br>
+                                <label>BTC: <strong class="btn-outline-danger">1NqA2XncZi6w5QN1FgyNRi4jhWZWKqRgih</strong></label><br>
+                                <label>BCH: <strong class="btn-outline-danger">qz6amjan50vl2qkvtq3qn263ap3kxk70zqsd073fzw</strong></label><br>
+                                <label>Bitcoin SV: <strong class="btn-outline-danger">qq98x5ah2ejtm54fz4hwj7ng9jtm7tsj2cdlrr2x4t</strong></label><br>
+                                <label>Ethereum: <strong class="btn-outline-danger">0x42f72738C7b907C759CD6C8E7A3C9F67bE781F3d</strong></label><br>
+                                <label>Clams: <strong class="btn-outline-danger">xC8aKWmciNCdRqcNwDcTkakGaSSSGFefjH</strong></label><br>
+                                <label>Litecoin: <strong class="btn-outline-danger">ltc1q7sx2kavkdlrruyyfdaw58zkdycut9xdzj6hku9</strong></label><br>
+                                <label>Zcash: <strong class="btn-outline-danger">t1ZiA8dPDivC1ZxBSbBGba4AkAbqKbrcEb6</strong></label><br>
+                                <label>BitcoinGold: <strong class="btn-outline-danger">btg1q4ckrzewvvmycrn2vsrjrkcmzpzlncahyphvh4u</strong></label><br>
+                                <label>www.hwcalc.ga</label>
+                                </div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+          
+            
+			
+        </div>
+	</div>
+   
+</body>
+
+<!-- Core JS Files -->
+<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/popper.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Switches -->
+<script src="assets/js/bootstrap-switch.min.js"></script>
+
+<!--  Plugins for Slider -->
+<script src="assets/js/nouislider.js"></script>
+
+
+<!--  Paper Kit Initialization and functons -->
+<script src="assets/js/paper-kit.js?v=2.1.0"></script>
+<script type="text/javascript">
+        $(document).ready(function (){
+           
+            $('#imei').on('submit', function(e){
+                $('#loading').html("Wege make I calculate give you...");
+                e.preventDefault();
+                var form_data = new FormData(this);
+                $.ajax({
+                  dataType: 'text', // what to expect back from the server
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                    type: $(this).attr('method'),
+                    url: $(this).attr('action'),
+                    data: form_data,
+
+                    success: function(data){
+                        $('#loading').html("Bingo! I do am");
+                        $('#ajax-imei').html(data);
+                        
+                    }
+                });
+            });
+        });
+    </script>
+
+</html>
