@@ -5,4 +5,4 @@ Note: Most 4G devices may not accept version 3 algo code
 
 But for 3G devices. 100% can unlock
 
-Link to live app: www.hwcalc.ga 
+Link to live app: www.hwcalc.cf
