@@ -1,7 +1,7 @@
-"# huaweiv3calculator" 
-Calculate the unlock code for huawei devices 3G/4G v1, v2, v3/v201
+# huaweiv3calculator
+Calculate the unlock code for **huawei** devices 3G/4G v1, v2, v3/v201
 
-Note: Most 4G devices may not beb 100%
+Note: Most 4G devices may not be 100%
 
 But for 3G devices. 100% can unlock
 
